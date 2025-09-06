@@ -1,0 +1,24 @@
+input_file: "data/inputs/Tech_Compliance_DayToDay_Pack.xlsx"
+output_folder: "data/outputs"
+sheets:
+  iso27001: "ISO27001 Annex A"
+  iso27701: "ISO27701 Annex A&B"
+  dashboard: "Metrics & Dashboard"
+score_column: "Compliance Score (%)"
+rag_green: 90
+rag_amber: 70
+email:
+  enabled: true
+  method: "graph"
+  graph_client_id: "PASTE-YOUR-CLIENT-ID-HERE"
+  # For outlook.com/hotmail use "consumers"; for work/school use "common" or your tenant ID
+  graph_authority: "https://login.microsoftonline.com/consumers"
+  to:
+    - "sue.eze@outlook.com"
+  subject: "Daily Compliance KPIs"
+  body: |
+    Hi, today’s ISO 27001/27701 KPIs and visuals are attached.
+  attach:
+    - "data/outputs/summary_history.csv"
+    - "data/outputs/iso27001_distribution.png"
+    - "data/outputs/iso27701_distribution.png"
