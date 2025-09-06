@@ -43,3 +43,69 @@ Built with **Streamlit, Pandas, and Plotly** — deployed seamlessly on Streamli
 ---
 
 ## 🗂 Project Structure
+compliance-pipeline/
+│── data/
+│ ├── sample_kpis.csv # Demo KPI dataset
+│── streamlit_app.py # Entry point for Streamlit
+│── dashboard.py # Visualization components
+│── requirements.txt # Python dependencies
+│── runtime.txt # Python runtime version
+│── README.md # Project documentation
+
+
+---
+
+## ⚙️ Installation (Local Run)
+```bash
+# Clone the repo
+git clone https://github.com/22Ifeoma22/compliance-pipeline.git
+cd compliance-pipeline
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run streamlit_app.py
+📊 Sample Data
+
+data/sample_kpis.csv
+
+Owner	Status	Score
+Risk	Complete	95
+Compliance	In Progress	70
+Legal	Delayed	55
+IT	Not Started	30
+Audit	Complete	90
+Governance	In Progress	65
+
+🛠 Tech Stack
+
+Streamlit
+ – App framework
+
+Pandas
+ – Data handling
+
+Plotly
+ – Interactive charts
+
+🌟 Next Improvements
+
+📈 Add trend lines for KPI progression
+
+🔔 Email/Slack alerts for overdue tasks
+
+🗃 Connect to real compliance datasets (CSV, DB, API)
+
+👩‍💻 Author
+
+Brow (Sue Eze)
+MSc Computer Science (AI) – University of Wolverhampton
+Specialising in AI Governance, Risk & Compliance
+
+✨ Steps for you now:  
+1. Copy this into your repo as **`README.md`**.  
+2. Replace `YOUR-STREAMLIT-DEPLOYMENT-LINK` with your actual Streamlit Cloud link.  
+3. Create a folder `assets/` → drop in screenshots of your deployed app (the ones you already grabbed).  
+
+Would you like me to also **add a Streamlit "Deploy" badge** (so anyone can click and redeploy your app from your repo)?
