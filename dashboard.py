@@ -1,5 +1,42 @@
 # dashboard.py — Compliance Automation Dashboard (ISO 27001 & 27701)
 # Run:  streamlit run dashboard.py
+# --- Demo-data fallback so app works anywhere ---
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import datetime as dt
+
+DATA_DIR = Path("data")
+INPUTS = DATA_DIR / "inputs"
+OUTPUTS = DATA_DIR / "outputs"
+INPUTS.mkdir(parents=True, exist_ok=True)
+OUTPUTS.mkdir(parents=True, exist_ok=True)
+
+summary_csv = OUTPUTS / "summary_history.csv"
+
+def _make_demo_history(n=6):
+    now = pd.Timestamp.now().floor("min")
+    ts = pd.date_range(end=now, periods=n, freq="H")
+    df = pd.DataFrame({
+        "timestamp": ts,
+        "27001_total": np.random.randint(5, 10, size=n),
+        "27001_readiness": np.random.uniform(70, 95, size=n).round(1),
+        "27701_total": np.random.randint(5, 10, size=n),
+        "27701_readiness": np.random.uniform(65, 92, size=n).round(1),
+    })
+    return df
+
+if not summary_csv.exists():
+    demo = _make_demo_history()
+    demo.to_csv(summary_csv, index=False)
+
+# small helper to load history everywhere
+def load_history():
+    try:
+        return pd.read_csv(summary_csv, parse_dates=["timestamp"])
+    except Exception:
+        return _make_demo_history()
+# --- end demo fallback ---
 
 import io
 import json
