@@ -41,3 +41,16 @@ st.download_button(
     file_name="compliance_kpis.csv",
     mime="text/csv",
 )
+import pandas as pd
+import os
+
+DATA_PATH = "data/sample_kpis.csv"
+
+def load_data():
+    if os.path.exists(DATA_PATH):
+        return pd.read_csv(DATA_PATH)
+    else:
+        st.warning("No data file found, loading empty dataframe.")
+        return pd.DataFrame()
+
+df = load_data()
