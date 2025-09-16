@@ -23,7 +23,7 @@ Built with **Streamlit, Pandas, and Plotly** — deployed seamlessly on Streamli
 
 ---
 
-## 📸 Screenshots  
+##  Screenshots  
 ### Dashboard Overview  
 ![Dashboard Screenshot](assets/dashboard_overview.png)  
 
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run streamlit_app.py
-📊 Sample Data
+ Sample Data
 
 data/sample_kpis.csv
 
@@ -89,21 +89,21 @@ Pandas
 Plotly
  – Interactive charts
 
-🌟 Next Improvements
+ Next Improvements
 
-📈 Add trend lines for KPI progression
+ Add trend lines for KPI progression
 
-🔔 Email/Slack alerts for overdue tasks
+Email/Slack alerts for overdue tasks
 
 🗃 Connect to real compliance datasets (CSV, DB, API)
 
-👩‍💻 Author
+ Author
 
 Brow (Sue Eze)
 MSc Computer Science (AI) – University of Wolverhampton
 Specialising in AI Governance, Risk & Compliance
 
-✨ Steps for you now:  
+ Steps for you now:  
 1. Copy this into your repo as **`README.md`**.  
 2. Replace `YOUR-STREAMLIT-DEPLOYMENT-LINK` with your actual Streamlit Cloud link.  
 3. Create a folder `assets/` → drop in screenshots of your deployed app (the ones you already grabbed).  
