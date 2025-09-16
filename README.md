@@ -18,8 +18,8 @@ Built with **Streamlit, Pandas, and Plotly** — deployed seamlessly on Streamli
 
 ---
 
-## 🚀 Live Demo  
-👉 [Launch the Dashboard](https://YOUR-STREAMLIT-DEPLOYMENT-LINK)  
+## Live Demo  
+ [Launch the Dashboard](https://YOUR-STREAMLIT-DEPLOYMENT-LINK)  
 
 ---
 
@@ -32,13 +32,13 @@ Built with **Streamlit, Pandas, and Plotly** — deployed seamlessly on Streamli
 
 ---
 
-## 🔑 Features
-- ✅ KPI tracking (Completed, In Progress, Delayed, Not Started)  
-- ✅ Risk heatmap by owner × score  
-- ✅ Donut chart for controls coverage  
-- ✅ Breach callout (high-priority alerting)  
-- ✅ Export filtered data to CSV  
-- ✅ Cached loaders for speed  
+##  Features
+-  KPI tracking (Completed, In Progress, Delayed, Not Started)  
+-  Risk heatmap by owner × score  
+-  Donut chart for controls coverage  
+-  Breach callout (high-priority alerting)  
+-  Export filtered data to CSV  
+-  Cached loaders for speed  
 
 ---
 
