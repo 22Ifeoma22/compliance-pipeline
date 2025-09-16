@@ -22,7 +22,15 @@ Built with **Streamlit, Pandas, and Plotly** — deployed seamlessly on Streamli
  [Launch the Dashboard](https://YOUR-STREAMLIT-DEPLOYMENT-LINK)  
 
 ---
+A Streamlit app to monitor DSAR SLA, risk heatmap, and ISO 42001 / NIST AI RMF alignment.
 
+## Preview
+![Dashboard Preview](visuals/dashboard_preview.png)
+
+## Run locally
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
 ##  Screenshots  
 ### Dashboard Overview  
 ![Dashboard Screenshot](assets/dashboard_overview.png)  
