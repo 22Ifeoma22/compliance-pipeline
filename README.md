@@ -11,7 +11,7 @@ Risk & Compliance KPIs – Generates ISO 27001/27701 readiness and distribution 
 Streamlit Dashboard – Interactive web app for executives with KPI cards and trendlines.
 Email Notifications – (placeholder) ready for integration with Microsoft Graph API.
 Modular Design – Extendable for ISO 42001, GDPR Article 22, NIST AI RMF monitoring.
-# 📊 Compliance & Risk Dashboard
+#  Compliance & Risk Dashboard
 
 An interactive dashboard for tracking **compliance KPIs, risks, and AI audit alignment**.  
 Built with **Streamlit, Pandas, and Plotly** — deployed seamlessly on Streamlit Cloud.
