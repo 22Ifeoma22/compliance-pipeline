@@ -1,11 +1,12 @@
-Compliance Pipeline Dashboard
-AI-Driven Compliance & Risk Automation for ISO & Data Protection
+﻿# Compliance Pipeline Dashboard
 
-This project demonstrates how compliance, data protection, and risk monitoring can be automated and visualized with modern tools.
-It’s designed to help risk/compliance professionals move from manual Excel reporting to automated dashboards that deliver real-time insights.
+This Streamlit app shows DSAR SLA, risk heatmap, and ISO/NIST coverage.
 
-Features
+## Preview
+![Risk Heatmap](visuals/risk_heatmap.png)
+![KPI Dashboard](visuals/kpi_dashboard.png)
 
+HEAD
 Automated ETL Pipeline – Extracts compliance metrics and saves results to CSV.
 Risk & Compliance KPIs – Generates ISO 27001/27701 readiness and distribution charts.
 Streamlit Dashboard – Interactive web app for executives with KPI cards and trendlines.
@@ -50,7 +51,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🗂 Project Structure
+##  Project Structure
 compliance-pipeline/
 │── data/
 │ ├── sample_kpis.csv # Demo KPI dataset
@@ -63,7 +64,7 @@ compliance-pipeline/
 
 ---
 
-## ⚙️ Installation (Local Run)
+##  Installation (Local Run)
 ```bash
 # Clone the repo
 git clone https://github.com/22Ifeoma22/compliance-pipeline.git
@@ -86,7 +87,7 @@ IT	Not Started	30
 Audit	Complete	90
 Governance	In Progress	65
 
-🛠 Tech Stack
+ Tech Stack
 
 Streamlit
  – App framework
@@ -103,7 +104,7 @@ Plotly
 
 Email/Slack alerts for overdue tasks
 
-🗃 Connect to real compliance datasets (CSV, DB, API)
+ Connect to real compliance datasets (CSV, DB, API)
 
  Author
 
@@ -117,3 +118,8 @@ Specialising in AI Governance, Risk & Compliance
 3. Create a folder `assets/` → drop in screenshots of your deployed app (the ones you already grabbed).  
 
 Would you like me to also **add a Streamlit "Deploy" badge** (so anyone can click and redeploy your app from your repo)?
+=======
+## Run locally
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+f49204f (Add dashboard preview image and update README)
